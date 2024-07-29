@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0
+}
+.one{
+
+    background-color: aqua;
+    width:50%;
+    height:100vh;
+    float: left;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+
+
+}
+ .two{
+    width:50%;
+    height:100vh;
+    background-color: darkgoldenrod;
+    float: right;
+    font-size: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+@media (max-width:500px){
+    .one{
+        clear: both;
+        height: 50vh;
+        width: 100%;
+    }
+    .two{
+        clear: both;
+        height: 50vh;
+        width: 100%;
+    }
+    .pa{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    
+}
